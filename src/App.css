@@ -1,38 +1,435 @@
 .App {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+  min-width: 100%;
 }
 
+
 .App-logo {
-  height: 40vmin;
+  height: 40px;
+  width: 200px;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: transparent;
+  height: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 25px;
+  color: white;
+  font-family: HelveticaUltraLt_0;
+}
+
+.navbar {
+  display:flex;
+  justify-content: center;
+  width:100%;
+  position:fixed;
+  z-index:1;
+}
+
+.navbar-mobile{
+  display:none;
+  width: 100%;
+  height:50px;
+  position: fixed;
+  z-index: 2;
+}
+.mobile-menu{
+  position: absolute;
+  z-index:5;
+  width:50vw;
+  height: 40vh;
+  background-color: #29abe2!important;
+  top:0%; left:0%; 
+  text-align: left;
+}
+
+.mobile-navbar{
+  display:flex;
+  width: 100%;
+  height:40px;
+  margin-top:10px;
+  justify-content: space-around;
+  margin-left:2vw;
+}
+.mb-nv-wrapper{
+  display:flex;
+  width: 100%;
+  height:100%;
+  justify-content: space-around;
+}
+
+.app-logo-mobile{
+  width: 140px;
+  max-height: 28px;
+
+}
+.hamburguer{
+  margin-left:5vw;
+  width:40px;
+}
+
+
+.toolbar {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height:10vh;
+  width:100%;
+}
+
+a{
+  margin-right:0.4rem;
+  margin-left:0.4rem;
+  color: white;
+  font-family: HelveticaUltraLt_0;
+}
+
+.nav-btns{
+  height: 100%;
+  display:flex;
+  align-items: center;
+}
+
+.idx-img{
+  background-image: url('./imagens/index-image.jpg');
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:-50px;
+  height:100vh;
+  width:100%;
+}
+
+@font-face {
+  font-family: ps;
+  src: url('./Fonts/ps.ttf');
+  font-weight: lighter;
+}
+
+
+@font-face {
+  font-family: HelveticaUltraLt_0;
+  src: url('./Fonts/HelveticaUltraLt_0.ttf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: roboto-light;
+  src: url('./Fonts/Roboto-Light_0.ttf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Roboto-Regular_0;
+  src: url('./Fonts/Roboto-Regular_0.ttf');
+}
+
+.idx-text{
+  margin-right:33vw;
+  font-family: ps;
+  font-size: 42px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.estagio{
+  font-weight:lighter;
+  font-size: 92px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+svg {
+  width: 100%;
+}
+
+.processo-text{
+  background-color: black;
+  height: 100px;
+}
+.register{
+  background-color: #29abe2;
+  height:590px;
+  position: relative;
+}
+.cadastro-text{
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5vh;
+  font-family: HelveticaUltraLt_0;
+  font-size:48px;
+}
+.register-form{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 40vw;
+  text-align: left;
+  color: white;
+}
+.text-input-div{
+  margin-top: 2vh;
+}
+
+.cadastrar-btn{
+  background-color: #012d51!important;
+  border:none!important;
+  color:#29abe2!important;
+  font-family: ps;
+  font-size:36px;
+  align-self: center!important;
+  min-width: 8vw!important;
+}
+
+.pg-btn{
+  background-color: #012d51!important;
+  border:none!important;
+  color:#29abe2!important;
+  font-family: ps;
+  font-size:36px;
+  align-self: center!important;
+  min-width: 8vw!important;
+}
+
+.cadastrar-btn-div{
+  margin-top:5vh;
+  width: 100%;
+  height:25%;
+  text-align: center;
+
+}
+.cadastrar-btn:hover{
+  background-color: #00192d!important;
+}
+
+.pg-btn:hover{
+  background-color: #00192d!important;
+}
+
+.text-input{
+  width:40vw!important;
+  background-color: transparent!important;
+  border-top: none!important;
+  border-right: none!important;
+  border-left: none!important;
+  border-bottom: 1px solid white!important;
+  color:white!important;
+}
+
+.list-title{
+  font-family: HelveticaUltraLt_0;
+  margin-top: 2vh;
+  color:#29abe2;
+  font-size:42px;
+}
+
+.list{
+  height: 384px;
+}
+.table-mobile{
+  display: none;
+  height:100vh;
+  width:100vw;
+  text-align: center;
+}
+
+.list-btns{
+  width:90%;
+  display:flex;
+  margin-left:10%
+
+}
+
+.list-btn{
+  background-color: transparent!important;
+  border: 1px;
+  border-style: solid;
+  margin-right:2%;
+  width: 20.90%!important;
+  height:4vh;
+}
+.right{
+  margin-right: 0px!important;
+}
+.list-board{
+  border: 1px solid #29abe2!important;
+  margin-left:10%;
+  width:80%;
+  text-overflow:ellipsis!important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tbl-line{
+  border-bottom: 1px solid #29abe2;
+  height:3.7vh;
+  margin-right:5vw;
+  margin-left:5vw;
+  display:flex;
+}
+
+.margin-right{
+  width:18vw;
+  text-align: start;
+}
+
+.top{
+  margin-top:4vh;
+}
+.bot{
+  margin-bottom: 4vh;
+}
+
+.footer{
+  background-image: url('./imagens/rodape-desktop.jpg');
+  background-size: cover;
+  height: 280px;
+  position: relative;
+  
+
+}
+table{
+  border-spacing:0;
+  position: absolute;
+  top: 38%; left: 50%;
+  transform: translate(-50%,-50%);
+  max-height: 80%;
+  overflow-y:auto;
+  display:block;
+  align-content: center;
+}
+
+.page-btn{
+  height: 10px;
+  width: 40vw;
+  align-content: space-between;
+  position:relative;
+  top: 82%; left: 41.5vw;
+
+}
+@media (max-width: 1024px) {
+
+  .navbar{
+    display:none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .idx-text{
+    margin-right: 0vw;
+    margin-bottom: 40vh;
+  }
+
+  .navbar-mobile{
+    display:flex;
+  }
+
+  .home-btn{
+    display:none;
+  }
+
+}
+
+@media (max-width:700px) {
+  .idx-img{
+    background-image: url('./imagens/index-image-mobile.jpg');
+  }
+
+  .footer{
+    background-image: url('./imagens/rodape-mobile.jpg');
+  }
+
+  table{
+    display:none;
+  }
+  .pg-btn{
+    width:20vw;
+    height: 4.5h;
+    font-size: 24px;
+  }
+  .page-btn{
+    top: 84%; left: 30vw;
+  }
+
+  .cadastro-text{
+    font-size: 42px;
+  }
+  .register-form{
+    width: 70vw;
+  }
+  .text-input{
+    width:70vw!important;
+  }
+  .cadastrar-btn{
+    width:65vw;
+  }
+  .table-mobile{
+    display:contents;
   }
 }
+
+.board{
+  text-align: center;
+  position: relative;
+  width:100%;
+  text-overflow: ellipsis;
+  height: 75%;
+}
+.home-btn{
+  position: relative;
+  top: 60%; left: 85%;
+  height:10vh;
+  width: 10vh;
+}
+.top-btn{
+  height:8vh;
+  width: 8vh;
+}
+.top-btn:hover{
+  filter: brightness(1.15);
+}
+.square{
+  min-width: 10vw;
+  max-width: 40vw!important;
+  width: fit-content;
+  text-overflow: ellipsis;
+  height:5.5vh!important;
+  word-break: break-all;
+}
+
+.square-num{
+  width: 7vw;
+  height:5.5vh;
+  color:#012d51!important;
+}
+
+.table-head{
+  font-family: Roboto-Regular_0;
+  color:#510101!important;
+}
+
+.table-num{
+  font-family: roboto-light;
+}
+
+.v{
+  border-left:1px solid #29abe2;
+  border-right:1px solid #29abe2;
+}
+
+.h{
+  border-top:1px solid #29abe2;
+  border-bottom:1px solid #29abe2;
+}
+
+
+
+.footer-text{
+  font-family: roboto-light;
+  color:white;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
