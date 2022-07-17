@@ -46,6 +46,8 @@
   background-color: #29abe2!important;
   top:0%; left:0%; 
   text-align: left;
+  border-bottom: 1px solid #012d51;
+  border-right: 1px solid #012d51;
 }
 
 .mobile-navbar{
